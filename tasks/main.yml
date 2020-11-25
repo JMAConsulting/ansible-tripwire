@@ -78,7 +78,7 @@
 
 - name: "Deploy our customised policy"
   template:
-    src: etc/tripwire/twpol.txt
+    src: "{{ tripwire_policy_template }}"
     dest: /etc/tripwire/twpol.txt
     owner: root
     group: root
@@ -88,7 +88,7 @@
 
 - name: "Deploy our customised configuraton"
   template:
-    src: etc/tripwire/twcfg.txt
+    src: "{{ tripwire_config_template }}"
     dest: /etc/tripwire/twcfg.txt
     owner: root
     group: root

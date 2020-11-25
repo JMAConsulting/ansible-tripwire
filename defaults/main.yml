@@ -1,1 +1,3 @@
 report_email_address: "exmaple@example.com"
+tripwire_policy_template: "etc/tripwire/twpol.txt"
+tripwire_config_template: "etc/tripwire/twcfg.txt"
