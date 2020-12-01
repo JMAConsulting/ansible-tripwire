@@ -248,6 +248,8 @@ SIG_HI        = 100 ;                # Critical files that are
 )
 {
         /etc            -> $(SEC_BIN) ;
+        !/etc/ufw/user.rules; # ignore rules file as changed by iptables
+        !/etc/ufw/user6.rules; # Ignore rules file as changed by iptables
         !/etc/.git;
         !/etc/.etckeeper;
         !/etc/letsencrypt; # If something changed here then icinga ssl notificaton should pick it up
