@@ -1,3 +1,9 @@
+- name: "Gather facts"
+  gather_facts:
+    parallel: yes
+  tags:
+    - tripwire
+
 - name: "Install pwgen"
   apt:
     name: "pwgen"
