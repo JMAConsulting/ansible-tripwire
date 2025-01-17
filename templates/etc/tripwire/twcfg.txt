@@ -15,4 +15,5 @@ MAILMETHOD    =SMTP
 SMTPHOST      =localhost
 SMTPPORT      =25
 TEMPDIRECTORY =/tmp
-MAILFROMADDRESS = tripwire@$(HOSTNAME).{{ tripwire_sending_domain }} 
+MAILFROMADDRESS = tripwire@$(HOSTNAME).{{ tripwire_sending_domain }}
+RESOLVE_IDS_TO_NAMES=false 
